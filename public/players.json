@@ -1,107 +1,138 @@
 [
-    {
-      "player_image": "https://i.ibb.co.com/6n1xyjy/348106.jpg",
-      "name": "Virat Kohli",
-      "country_name": "India",
-      "category": "Batsman",
-      "left_or_right_hand": "Right",
-      "price": 200000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/zb1YP7K/378462.jpg",
-      "name": "Shakib Al Hasan",
-      "country_name": "Bangladesh",
-      "category": "All-Rounder",
-      "left_or_right_hand": "Left",
-      "price": 180000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/qnvtmX8/388994.webp",
-      "name": "Babar Azam",
-      "country_name": "Pakistan",
-      "category": "Batsman",
-      "left_or_right_hand": "Right",
-      "price": 220000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/gFKHZN9/387564.webp",
-      "name": "Steve Smith",
-      "country_name": "Australia",
-      "category": "Batsman",
-      "left_or_right_hand": "Right",
-      "price": 240000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/SvjZrHh/383481.webp",
-      "name": "Andre Russell",
-      "country_name": "West Indies",
-      "category": "All-Rounder",
-      "left_or_right_hand": "Right",
-      "price": 250000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/jzzn00y/372481.webp",
-      "name": "Mohammed Shami",
-      "country_name": "India",
-      "category": "Bowler",
-      "left_or_right_hand": "Right",
-      "price": 150000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/4N29TdC/383539.webp",
-      "name": "Mustafizur Rahman",
-      "country_name": "Bangladesh",
-      "category": "Bowler",
-      "left_or_right_hand": "Left",
-      "price": 140000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/7yVMFWd/382983.webp",
-      "name": "Shaheen Afridi",
-      "country_name": "Pakistan",
-      "category": "Bowler",
-      "left_or_right_hand": "Left",
-      "price": 160000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/72nfbQQ/384868.webp",
-      "name": "Pat Cummins",
-      "country_name": "Australia",
-      "category": "Bowler",
-      "left_or_right_hand": "Right",
-      "price": 190000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/wyggWqR/388489.webp",
-      "name": "Ben Stokes",
-      "country_name": "England",
-      "category": "All-Rounder",
-      "left_or_right_hand": "Left",
-      "price": 230000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/fkvYXHK/388585.webp",
-      "name": "Hardik Pandya",
-      "country_name": "India",
-      "category": "All-Rounder",
-      "left_or_right_hand": "Right",
-      "price": 175000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/QJy4RVb/355180.webp",
-      "name": "Tamim Iqbal",
-      "country_name": "Bangladesh",
-      "category": "Batsman",
-      "left_or_right_hand": "Left",
-      "price": 130000
-    },
-    {
-      "player_image": "https://i.ibb.co.com/3y3xCsC/387555.webp",
-      "name": "Rohit Sharma",
-      "country_name": "India",
-      "category": "Batsman",
-      "left_or_right_hand": "Right",
-      "price": 225000
-    }
-  ]
-  
+  {
+    "id": 1,
+    "player_image": "https://i.ibb.co.com/6n1xyjy/348106.jpg",
+    "name": "Virat Kohli",
+    "country_name": "India",
+    "category": "Batsman",
+    "left_or_right_hand": "Right-hand-bat",
+    "price": 200000
+  },
+  {
+    "id": 2,
+    "player_image": "https://i.ibb.co.com/phFTMqq/378462.jpg",
+    "name": "Shakib Al Hasan",
+    "country_name": "Bangladesh",
+    "category": "All-Rounder",
+    "left_or_right_hand": "Left-hand-bat",
+    "price": 180000
+  },
+  {
+    "id": 3,
+    "player_image": "https://i.ibb.co.com/qnvtmX8/388994.webp",
+    "name": "Babar Azam",
+    "country_name": "Pakistan",
+    "category": "Batsman",
+    "left_or_right_hand": "Right-hand bat",
+    "price": 220000
+  },
+  {
+    "id": 4,
+    "player_image": "https://i.ibb.co.com/gFKHZN9/387564.webp",
+    "name": "Steve Smith",
+    "country_name": "Australia",
+    "category": "Batsman",
+    "left_or_right_hand": "Right-hand-bat",
+    "price": 240000
+  },
+  {
+    "id": 5,
+    "player_image": "https://i.ibb.co.com/SvjZrHh/383481.webp",
+    "name": "Andre Russell",
+    "country_name": "West Indies",
+    "category": "All-Rounder",
+    "left_or_right_hand": "Right-hand-bat",
+    "price": 250000
+  },
+  {
+    "id": 6,
+    "player_image": "https://i.ibb.co.com/jzzn00y/372481.webp",
+    "name": "Mohammed Shami",
+    "country_name": "India",
+    "category": "Bowler",
+    "left_or_right_hand": "Right-arm-fast",
+    "price": 150000
+  },
+  {
+    "id": 7,
+    "player_image": "https://i.ibb.co.com/4N29TdC/383539.webp",
+    "name": "Mustafizur Rahman",
+    "country_name": "Bangladesh",
+    "category": "Bowler",
+    "left_or_right_hand": "Left-arm-fast",
+    "price": 140000
+  },
+  {
+    "id": 8,
+    "player_image": "https://i.ibb.co.com/7yVMFWd/382983.webp",
+    "name": "Shaheen Afridi",
+    "country_name": "Pakistan",
+    "category": "Bowler",
+    "left_or_right_hand": "Left-arm-fast",
+    "price": 160000
+  },
+  {
+    "id": 9,
+    "player_image": "https://i.ibb.co.com/72nfbQQ/384868.webp",
+    "name": "Pat Cummins",
+    "country_name": "Australia",
+    "category": "Bowler",
+    "left_or_right_hand": "Right-arm-fast",
+    "price": 190000
+  },
+  {
+    "id": 10,
+    "player_image": "https://i.ibb.co.com/wyggWqR/388489.webp",
+    "name": "Ben Stokes",
+    "country_name": "England",
+    "category": "All-Rounder",
+    "left_or_right_hand": "Left-hand-bat",
+    "price": 230000
+  },
+  {
+    "id": 11,
+    "player_image": "https://i.ibb.co.com/fkvYXHK/388585.webp",
+    "name": "Hardik Pandya",
+    "country_name": "India",
+    "category": "All-Rounder",
+    "left_or_right_hand": "Right-hand-bat",
+    "price": 175000
+  },
+  {
+    "id": 12,
+    "player_image": "https://i.ibb.co.com/QJy4RVb/355180.webp",
+    "name": "Tamim Iqbal",
+    "country_name": "Bangladesh",
+    "category": "Batsman",
+    "left_or_right_hand": "Left-hand-bat",
+    "price": 130000
+  },
+  {
+    "id": 13,
+    "player_image": "https://i.ibb.co.com/3y3xCsC/387555.webp",
+    "name": "Rohit Sharma",
+    "country_name": "India",
+    "category": "Batsman",
+    "left_or_right_hand": "Right-hand-bat",
+    "price": 225000
+  },
+  {
+    "id": 14,
+    "player_image": "https://i.ibb.co.com/cD3TkCh/387723.jpg",
+    "name": "Travis Head",
+    "country_name": "Australia",
+    "category": "Batsman",
+    "left_or_right_hand": "Left-hand bat",
+    "price": 210000
+},
+{
+    "id": 15,
+    "player_image": "https://i.ibb.co.com/bWnHZfR/384042.jpg",
+    "name": "Jasprit Bumrah",
+    "country_name": "India",
+    "category": "Bowler",
+    "left_or_right_hand": "Right-arm fast",
+    "price": 170000
+}
+
+]
