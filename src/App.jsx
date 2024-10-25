@@ -1,13 +1,16 @@
+import { useState } from 'react'
 import './App.css'
 import Header from './Components/Header/Header'
+import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers'
 
 function App() {
+  
   
 
   return (
     <>
-     <h1 className='text-2xl font-bold'>Select your 11</h1>
-     <Header></Header>
+      <Header></Header>
+      <AvailablePlayers></AvailablePlayers>
     </>
   )
 }
