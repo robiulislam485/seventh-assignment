@@ -1,7 +1,7 @@
 import { FaUserAlt } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
 
-const Player = ({ player }) => {
+const Player = ({ player,selectedPlayerHandler }) => {
     const { player_image, name, country_name, category, left_or_right_hand, price } = player;
 
     return (
@@ -21,7 +21,7 @@ const Player = ({ player }) => {
             </div>
             <div className="flex  justify-between items-center">
                 <p className="text-sm font-bold text-black">Price: ${price}</p>
-                <button className="px-2 py-1 text-gray-600 border-2 rounded-md hover:bg-[#E7FE29]">Choose Player</button>
+                <button onClick={()=>selectedPlayerHandler(player)} className="px-2 py-1 text-gray-600 border-2 rounded-md hover:bg-[#E7FE29]">Choose Player</button>
             </div>
        </div>
         
