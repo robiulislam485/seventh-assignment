@@ -18,7 +18,7 @@ const AvailablePlayers = ({selectedPlayerHandler}) => {
 
     return (
         <div>
-           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-48">
+           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-72">
            {
                 players.map(player=><Player selectedPlayerHandler={selectedPlayerHandler} key={player.id} player={player}></Player> )
             }

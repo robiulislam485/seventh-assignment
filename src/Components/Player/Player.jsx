@@ -1,7 +1,7 @@
 import { FaUserAlt } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
 
-const Player = ({ player,selectedPlayerHandler }) => {
+const Player = ({player, selectedPlayerHandler}) => {
     const { player_image, name, country_name, category, left_or_right_hand, price } = player;
 
     return (

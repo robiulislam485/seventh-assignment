@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { MdDeleteForever } from "react-icons/md";
-const SelectedPlayers = ({selectedPlayer,handleDelete}) => {
+const SelectedPlayers = ({selectedPlayer,handleDelete,activeHandler}) => {
     
     return (
-        <div className="max-w-7xl mx-auto space-y-3">
+        <div className="max-w-7xl mx-auto space-y-3 mb-80">
             {
                 selectedPlayer.map((player) => (<div key={player.id} className=" border-2 p-4 rounded-md shadow-sm">
                     <div className="flex justify-between items-center ">
@@ -18,7 +18,7 @@ const SelectedPlayers = ({selectedPlayer,handleDelete}) => {
                     </div>
                 </div>))
             }
-            <button   className="bg-[#E7FE29] px-4 py-2 rounded-md text-black font-semibold">Add More Player</button>
+            <button onClick={()=>activeHandler()} className="bg-[#E7FE29] px-4 py-2 rounded-md text-black font-semibold">Add More Player</button>
         </div>
     );
 };
