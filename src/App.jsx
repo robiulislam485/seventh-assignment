@@ -8,23 +8,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import SelectedPlayers from './Components/SelectedPlayers/SelectedPlayers'
 import AvailablePlayersBtn from './Components/AvailablePlayersBtn/AvailablePlayersBtn'
 import Subscribe from './Components/Subscribe/Subscribe'
+import Banner from './Components/Banner/Banner'
 
 function App() {
   const [coin, setCoins] = useState(0);
-  const [isActive, setIsActive] = useState({ cart: true });
+  const [isActive, setIsActive] = useState(true);
   const [selectedPlayer, setSelectedPlayer] = useState([]);
   const freeCoinClaim = (coins) => {
     const newCoins = coin + coins;
     setCoins(newCoins);
     toast.success('Coin is added')
   }
+  
   const activeHandler = (status) => {
-    if (status == "available") {
-      setIsActive({ cart: true })
-    }
-    else {
-      setIsActive({ cart: false })
-    }
+   setIsActive(!status)
   }
   const handleDecreasePrice = (price) => {
     setCoins(coin - price);
@@ -33,6 +30,9 @@ function App() {
     const isExist = selectedPlayer.find((player) => player.id == players.id);
     if (isExist) {
       toast.error('Player Already Added!')
+    }
+    else if (selectedPlayer.length === 6){
+    toast.error('Not enough space')
     }
     else if (players.price > coin) {
       toast.error('Not enough money!')
@@ -52,16 +52,13 @@ function App() {
     toast.success('Player removed succesfully.')
    
   }
-
-
-
-
   return (
     <>
-      <Header coin={coin} freeCoinClaim={freeCoinClaim}></Header>
+      <Header  coin={coin}></Header>
+      <Banner freeCoinClaim={freeCoinClaim}></Banner>
       <AvailablePlayersBtn activeHandler={activeHandler} isActive={isActive} selectedPlayer={selectedPlayer.length}></AvailablePlayersBtn>
       {
-        isActive.cart ? <AvailablePlayers selectedPlayerHandler={selectedPlayerHandler}></AvailablePlayers> :
+        isActive ? <AvailablePlayers selectedPlayerHandler={selectedPlayerHandler}></AvailablePlayers> :
           <SelectedPlayers activeHandler={activeHandler} selectedPlayer={selectedPlayer} handleDelete={handleDelete}></SelectedPlayers>
       }
       <div className='absolute z-40 ml-72 -mt-52'>
@@ -70,7 +67,7 @@ function App() {
       <div className='relative'>
         <Footer></Footer>
       </div>
-      <ToastContainer />
+      <ToastContainer position="top-center"/>
     </>
   )
 }

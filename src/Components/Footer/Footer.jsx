@@ -1,14 +1,14 @@
-
+import logo from '../../assets/logo-footer.png'
 
 const Footer = () => {
     return (
         <div>
             
-            <div className=" bg-black  text-white mb-5">
+            <div className=" bg-black  text-white ">
             <div className=" max-w-7xl mx-auto flex items-center justify-center ">
-            <img className="mt-40 mb-14"  src="./public/assets/logo-footer.png" alt="" />
+            <img className="mt-52 mb-14"  src={logo} alt="" />
             </div>
-         <div className="flex justify-between  max-w-7xl mx-auto gap-8 p-20">
+         <div className="flex justify-between  max-w-7xl mx-auto gap-8 p-10">
             <div>
                 <h2 className="text-lg font-bold">About Us</h2>
                 <p className="text-sm font-semibold text-gray-600 mt-6">We are a passionate team dedicated to providing the <br />best services to our customers.</p>
@@ -33,8 +33,12 @@ const Footer = () => {
                     </div>
             </div>
          </div>
+         <div className='py-8'>
+         < hr className='mb-5'/>
+         <p className='text-gray-500 text-center'>@2024 Your Company All Rights Reserved.</p>
+         </div>
             </div>
-            <hr />
+           
         </div>
     );
 };

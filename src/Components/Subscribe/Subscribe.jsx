@@ -1,10 +1,10 @@
 const Subscribe = () => {
     const bgImage = "https://i.ibb.co.com/87XnGbs/bg-shadow.png";
     return (
-        <div>
-            <div className={`max-w-7xl mx-auto  justify-center bg-no-repeat bg-cover bg-center rounded-lg mt-6 space-y-6 border-2 `}
+        <div className="border-2 p-5 rounded-md">
+            <div className={`max-w-7xl mx-auto  justify-center bg-no-repeat bg-cover bg-center rounded-lg space-y-6 border-2 `}
                 style={{ backgroundImage: `url(${bgImage})` }}>
-                <div className="text-center space-y-6 px-60 py-20">
+                <div className="text-center space-y-6 lg:px-60 lg:py-20">
                     <h1 className="text-3xl text-black font-bold">Subscribe to our Newsletter</h1>
                     <p className="text-sm font-bold text-gray-600">Get the latest updates and news right in your inbox!</p>
                     <div className="flex justify-center items-center gap-4">
