@@ -2,7 +2,7 @@ import bannerImage from '../../assets/banner-main.png'
 const Banner = ({coin,freeCoinClaim}) => {
     const bgImage = "https://i.ibb.co.com/87XnGbs/bg-shadow.png";
     return (
-        <div className={`max-w-7xl mx-auto  justify-center bg-no-repeat bg-cover bg-center rounded-lg mt-6 space-y-6`}
+        <div className={`max-w-7xl mx-auto  justify-center bg-no-repeat bg-cover bg-center rounded-lg mt-6 space-y-6 brightness-90`}
                 style={{ backgroundImage: `url(${bgImage})` }}>
                 <div className="flex flex-col items center text-center justify-center p-14 space-y-6">
                     <img className="w-52 mx-auto" src={bannerImage} alt="" />

@@ -4,9 +4,9 @@ import coinPhoto from '../../assets/coin.png'
 const Header = ({coin}) => {
     
     return (
-        <div className="max-w-7xl mx-auto mt-8 mb-6">
-           <div className='sticky top-0 bg-opacity-50 backdrop-blur-sm'>
-           <nav className="flex justify-between items-center ">
+        <div className="max-w-7xl mx-auto mt-8 mb-6 sticky top-0 bg-opacity-50 backdrop-blur-sm">
+           
+           <nav className="flex justify-between items-center">
                 <img src={logo} alt="" />
                 <div>
                     <ul className="flex gap-12 items-center text-gray-500">
@@ -21,7 +21,7 @@ const Header = ({coin}) => {
             </div>  
 
             
-            </div>
+       
        
     );
 };

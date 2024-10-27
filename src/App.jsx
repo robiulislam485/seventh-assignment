@@ -17,7 +17,7 @@ function App() {
   const freeCoinClaim = (coins) => {
     const newCoins = coin + coins;
     setCoins(newCoins);
-    toast.success('Coin is added')
+    toast.success('Congrates! coin is added')
   }
   
   const activeHandler = (status) => {
@@ -29,7 +29,7 @@ function App() {
   const selectedPlayerHandler = (players) => {
     const isExist = selectedPlayer.find((player) => player.id == players.id);
     if (isExist) {
-      toast.error('Player Already Added!')
+      toast.error('Congrates! player Already Added!')
     }
     else if (selectedPlayer.length === 6){
     toast.error('Not enough space')
@@ -41,7 +41,7 @@ function App() {
       handleDecreasePrice(players.price)
       const newSelectedPlayer = [...selectedPlayer, players];
       setSelectedPlayer(newSelectedPlayer);
-      toast.success('Player added succesfully.')
+      toast.success('Congrates! Player added succesfully.')
     }
     
   }
@@ -49,7 +49,7 @@ function App() {
     setCoins(coin + price);
     const remainingPlayer = selectedPlayer.filter((p) => p.id !== id);
     setSelectedPlayer(remainingPlayer);
-    toast.success('Player removed succesfully.')
+    toast.success('Congrates! player removed succesfully.')
    
   }
   return (
@@ -69,7 +69,7 @@ function App() {
       </div>
       <ToastContainer position="top-center"/>
     </>
-  )
+      )
 }
 
 export default App

@@ -1,4 +1,6 @@
-# Select Your Eleven ⚽
+# Select Your Eleven 
+### Project Live link
+https://teal-capybara-716a62.netlify.app/
 
 ### Project Description
 Select Your Eleven is a dynamic React application that lets users build their own team by selecting players and managing their roster. With an interactive interface, users can claim coins, choose players, view the selected team, and even delete players from the list.
